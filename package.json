@@ -1,0 +1,32 @@
+{
+  "name": "smart-mirror",
+  "version": "1.0.0",
+  "description": "An online version for the smart mirror project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tedeschi-byui/smart-mirror.git"
+  },
+  "keywords": [
+    "smart",
+    "mirror",
+    "node",
+    "online"
+  ],
+  "author": "Henrique Tedeschi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tedeschi-byui/smart-mirror/issues"
+  },
+  "homepage": "https://github.com/tedeschi-byui/smart-mirror#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "request": "^2.88.0",
+    "xml-js": "^1.6.8"
+  }
+}

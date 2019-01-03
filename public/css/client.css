@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html {
+    cursor: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000 !important;
+    color:#FFF !important;
+}
+
+table {
+    margin: 0 2%;
+    padding: 1%;
+    border: 1px solid white;
+    vertical-align: top;
+}
+
+.sexy_line { 
+    margin: -1% 0 0 0;
+    height: 1px;
+    background: black;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(black), to(black), color-stop(50%, white));
+}
+
+h1 {
+    font-size: 500% !important;
+    margin: 0;
+}
