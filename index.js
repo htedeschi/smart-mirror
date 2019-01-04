@@ -6,6 +6,15 @@ var bodyParser = require('body-parser');
 var request = require('request');
 var convert = require('xml-js');
 
+const { Pool } = require('pg');
+const connectionString = process.env.DATABASE_URL;
+const pool = new Pool(
+    {
+        connectionString: connectionString,
+        ssl: true
+    }
+);
+
 var app = express();
 app.use(express.static('public'));
 app.use(bodyParser.json());
@@ -23,7 +32,22 @@ app.listen(PORT, function () {
 
 
 app.get("/", function (req, res) {
-    res.render("client", { text: "Text goes here" });
+    res.send("This page is still under construction!");
+    res.end();
+});
+
+app.get("/activate", function (req, res) {
+    res.render("activate");
+    res.end();
+});
+
+app.get("/mirror", function (req, res) {
+    res.render("mirror");
+    res.end();
+});
+
+app.get("/new-mirror", function (req, res) {
+    res.render("new-mirror");
     res.end();
 });
 
