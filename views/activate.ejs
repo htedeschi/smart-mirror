@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Activate your smart mirror</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+
+    <link rel="stylesheet" href="css/activate.css" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+
+    <script type="text/javascript" src="js/activate.js"></script>
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="671998099779-45mppmv00hsfumqph9gt7ekrs79mnvmf.apps.googleusercontent.com">
+</head>
+
+<body onload="ready()" class="bg-dark">
+    <div class="container-fluid text-light">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                <div class="col-lg-8 col-md-8 col-sm-8 offset-lg-2 offset-md-2 offset-sm-2">
+                    <h1>Activate device</h1>
+                    <h3>Let's activate your device?</h3>
+                    <h4>First things first!</h4>
+                </div>
+            </div>
+        </div>
+        <div class='sexy_line my-2'></div>
+        <div class="row my-2">
+            <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                <div class="col-lg-6 col-md-6 col-sm-8 offset-lg-3 offset-md-3 offset-sm-2">
+                    <p>In order to have a fully functional mirror, we need you to register / sign in. This way we can
+                        track exactly which mirrors you have and sync your info across different mirrors</p>
+                    <div class="border rounded py-2 px-2 text-left">
+                        <h3>Sign in</h3>
+                        <form>
+                            <div class="
+                        form-group">
+                                <!-- <label for="email">Email address</label> -->
+                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                                    placeholder="Enter email">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                                    anyone
+                                    else.</small>
+                            </div>
+                            <div class="form-group">
+                                <!-- <label for="password">Password</label> -->
+                                <input type="password" class="form-control" id="password" placeholder="Password">
+                            </div>
+                            <button type="submit" class="btn btn-light">Sign in</button>
+                            <div class="g-signin2 float-right" data-onsuccess="onSignIn"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
